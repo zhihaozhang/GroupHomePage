@@ -4,26 +4,62 @@
     <meta charset="UTF-8">
     <title>Homepage</title>
     <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
-
+       <!--<link href="bootstrap/dist/css/bootstrap.css">-->
 </head>
+<style>
+    #myCarousel{
+        margin-top: 10px;
+    }
+</style>
 <body>
+    <div class="row" id="header">
 
-    <div class="container" style="width:70%" id="myCarousel">
-        <div class="carousel slide" data-interval="2000" id="carousel-pic" style="height: 350px">
+        <div class="logo col-md-7 pull-leftt">
+            <!--logo to be add-->
+            <img src="logo.png" class="img-circle" style="height: 50%">
+        </div>
+        <div class="row col-md-5" style="margin-top: 20px">
+            <div class="col-md-4">
+                <ul class="list-unstyled">
+                    <li><a href="http://www.iipl.fudan.edu.cn/~zhangjp/Resume/funds.htm" target="_parent">support</a></li>
+                    <li><a href="http://www.iipl.fudan.edu.cn/~zhangjp/publications/publicationselected.htm" target="_parent">Publications</a></li>
+                </ul>
+
+            </div>
+            <div class="col-md-4">
+                <ul class="list-unstyled">
+                    <li><a href="http://www.iipl.fudan.edu.cn/~zhangjp/Supervising/index.html" target="_parent">Members</a></li>
+                    <li><a href="http://www.iipl.fudan.edu.cn/~zhangjp/Awards/index.html" target="_parent">Gallery</a></li>
+                </ul>
+
+            </div>
+            <div class="col-md-4">
+                <ul class="list-unstyled">
+                    <li><a href="http://www.iipl.fudan.edu.cn/~zhangjp/Resume/activities.htm" target="_parent">Activities</a></li>
+                    <li><a href="http://www.iipl.fudan.edu.cn/~zhangjp/Resume/friendlinks.htm" target="_parent">Friend links</a></li>
+                </ul>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container" id="myCarousel">
+        <div class="carousel slide" data-interval="2000" id="carousel-pic" style="height: 290px">
             <ol class="carousel-indicators" style="margin-top: 200px">
                 <li data-target="#carousel-pic" data-slide-to="0" class="active"></li>
                 <li data-target="#carousel-pic" data-slide-to="1" class=""></li>
                 <li data-target="#carousel-pic" data-slide-to="2" class=""></li>
             </ol>
-            <div class="carousel-inner">
-                <div class="item active" style="width: 500px">
-                    <img src="3.JPG">
+            <div class="carousel-inner" style="width: 910px">
+                <div class="item active">
+                    <img src="3.png">
                 </div>
-                <div class="item" style="width: 500px">
-                    <img src="2.jpg">
+                <div class="item">
+                    <img src="2.png">
                 </div>
-                <div class="item" style="width: 500px">
-                    <img src="yifulou.png">
+                <div class="item">
+                    <img src="1.png">
                 </div>
             </div>
             <a class="left carousel-control" href="#carousel-pic" data-slide="prev">
