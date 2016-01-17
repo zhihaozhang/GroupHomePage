@@ -1,0 +1,152 @@
+@charset "utf-8";
+
+body,div,a,image,p,form,h1,h2,h3,h4,h5,h6,input,textarea,ul,li,dt,dd,dl{margin:0;padding:0;}
+body { font-family:"微软雅黑", "Microsoft YaHei", Helvetica, sans-serif; background:#edf1eb; color:#737373;}
+a,a:visited,h3{text-decoration:none; color:#990000;display: block;}
+a:hover{text-decoration:none; color:#333;}
+a{font-size: 1em;
+    background:url("../image/nav01.png") no-repeat 0 0.5em;
+    padding-left: 18px;
+    display: inline-block;
+    min-height: 28px;
+    line-height:1.5em;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    /*text-align: justify;*/ }
+image{border:0;}
+ul,li{list-style:none;}
+
+.module{margin-top:20px;}
+.title-h3{font-weight: bolder; font-size: 1.6em; line-height: 2.4em;}
+.header,.content,.footer {margin:0 auto;}
+.red-text{ color:#990000;}
+.red-bg{ background-color:#990000;}
+.yellow-text{ color:#efb019;}
+.black-bg{ background-color:#000;}
+.navs { width: 520px; overflow: hidden;}
+.nav ul li a { height: 28px; line-height:2em; padding-left: 18px; background:url(../image/nav01.png) no-repeat left center;}
+
+/*header*/
+.header { height: 100px; overflow:hidden; width: 100%; background:#edf1eb; border-bottom: #990000 solid 5px;}
+.nav01, .nav02, .nav03, .nav04 {  width: 130px; overflow:hidden; padding-top: 24px; }
+.logo{background: url("../image/logo.png") no-repeat; width:380px; height:70px; margin: 25px;}
+.page-header{margin:15px 0 0px;}
+
+/*footer*/
+.footer-1{background: #bbb; height:180px; margin-top: 60px;}
+.footer-2{background: #000; height:80px; }
+.footer-1 .container{padding-top: 30px;}
+.footer-1 .footerLogo{ margin-top: 30px;}
+.footer-1 .footerLogoMini{width:113px; margin-top: 30px;}
+.footer-1 .footerLogo .logo{background: url("../image/logo_monochrome.png") no-repeat; width:113px; height:50px; margin:0px 15px; }
+.footer-1 .footerLogoMini .logo{background: url("../image/logo_monochrome.png") no-repeat; width:113px; height:50px; }
+.footer-1 .footerLogo h6{width:450px;}
+/*.footer-1 .skype_logo_image{background: url("../image/call_skype_logo.png") no-repeat; width:12px; height: 12px;}*/
+.footer-1 .navs{width:300px;margin-top: 30px;}
+.footer-1 .nav ul li{font-size: 0.8em; }
+.footer-1 a{color:#737373; background:url("../image/nav01_monochrome.png") no-repeat left center  !important;}
+.footer-1 a:hover{color:#990000;}
+.footer-2 .footer_copyright{width:80; text-align: center; margin: 0 auto; padding-top: 15px;}
+
+
+/************************************首页内容************************************/
+.columnLeft, .columnRight{margin-top: 20px;}
+
+/*search*/
+.input-group{margin-top: 20px;}
+.input-group input{padding: none !important; height: 2em;}
+
+/*field*/
+#slider{ overflow: hidden; margin-right: 15px; margin-left: 15px;}
+/*.slider .btn-group-vertical{margin-top: 50px;width:10%;}
+.slider button{margin-bottom: 50px;height:50px;border: none;background: #990000;width:100%;}*/
+
+/*container*/
+.languageVersion{position:absolute; top:100px; left:85%; padding:0em 1.5em; z-index:10;}
+.languageVersion .language_ch_on{width:30px; height:40px; margin: 0 0.5em; background: url("../image/language_ch1.png") no-repeat left;}
+.languageVersion .language_en_on{width:30px; height:40px; margin: 0 0.5em;background: url("../image/language_en1.png") no-repeat left;}
+
+/*columnLeft*/
+#topNews,#publications{background: #f5f9f3; border-top:5px #990000 solid }
+#topNews ul{min-height:205px;}
+#publications ul{min-height:385px;}
+#publications span{color:#737373; }
+#topNews a.thumbnail{ background:none; background-size: 100%; border: solid 1px #ddd;}
+#topNews a.thumbnail:hover{border: #990000 solid 1px;}
+#topNews a, #publications a{ border-top: 1px #bbb dotted; margin-bottom: 15px;}
+#topNews a:hover, #publications a:hover{ background-color: #edf1eb;}
+#topNews .title-h3 .more, #publications .title-h3 .more{float:right; border:none; font-size: 1px; background: none;padding-top: 2em;}
+#topNews span{/*color:#737373;*/ padding-left: 5px; float:right; font-size: 0.5em;}
+#researches .media-left{padding:4px;}
+#researches .media-left #con1{margin: auto; background: url("../image/researches_SciVis.jpg") #990000 no-repeat; background-size: 100%;height:167px;}
+#researches .media-left #con2{margin: auto; background: url("../image/researches_TrajectoryVis.jpg") #990000 no-repeat; background-size: 100%;height:167px;}
+#researches .media-left #con3{margin: auto; background: url("../image/researches_WeiboVA.jpg") #990000 no-repeat; background-size: 100%;height:167px;}
+#researches .media-left #con4{margin: auto; background: url("../image/researches_GraphVis.jpg") #990000 no-repeat; background-size: 100%;height:167px;}
+#researches .media-body{border-right: 5px #990000 solid; background: #f5f9f3;}
+#researches .media-body a{display: block; line-height: 2.5em; background-position: 0.2em 1em;}
+#researches .media-body a:hover{background-color: #edf1eb;}
+#researches .media-body .moreProjects a{background:url("../image/pin.png") no-repeat 0 0.6em; }
+.sub_on1, .sub_off1, .sub_on2, .sub_off2, .sub_on3, .sub_off3, .sub_on4, .sub_off4 {float:left;display:inline;cursor:pointer;_cursor:hand;}
+#video .media-body{background:url("../image/video.jpg") no-repeat #990000;  height:300px;}
+#video button{width:60px; height:60px; background: url("../image/video_play.png") no-repeat; border:none; margin: 120px 50% 120px 50%;}
+
+/*columnRight*/
+
+
+
+/************************************team页内容************************************/
+.teamMember .btn{margin-top: 5px;}
+.teamMember .thumbnail, #identity .title-h3{border-top: solid 5px #990000;}
+.teamMemberPersonal{width:280px; float: left; display: block; padding:0; margin:0 6px 1em 6px;}
+.teamMemberPersonal a{color: #990000;}
+.teamMemberPersonal a:hover{border:solid 1px #990000;
+    filter:alpha(opacity=80);  /*支持 IE 浏览器*/
+    -moz-opacity:0.80; /*支持 FireFox 浏览器*/
+    opacity:0.80;  /*支持 Chrome, Opera, Safari 等浏览器*/}
+.teamMemberPersonal .photo{padding:0 !important; margin:0 !important; border:none !important; text-align: left; float:left; height:148px; width:110px; float: left;}
+.teamMemberPersonal .thumbnail{float: left; width:280px; margin: 0;background: #f5f9f3;}
+.teamMemberPersonal img{height:148px; width:110px; float: left;}
+.teamMemberPersonal .caption{width:160px; float: left; display: inline-block;padding-top: 0;}
+.teamMemberPersonal .caption h3, .teamMemberPersonal .caption p{ display: inline-block; float: left;}
+
+#Alumni .teamMemberPersonal img{height:121px; width:90px; float: left; margin:6px 0;}
+#Alumni .teamMemberPersonal .caption{width:180px; float: left; display: inline-block;padding-top: 0;}
+#Faculty .teamMemberPersonal img{height:175px; width:130px; float: left;}
+
+#Collaborators span{  text-decoration: none;color: #990000;font-size: 1.2em;}
+/*#PhD .title-h3{ border-bottom: solid 1px #990000;}*/
+
+/************************************简历页内容************************************/
+.resume-nav{width:100%;height:50px;background: #990000;}
+.resume-nav ul li{float: left;margin-right: 40px;}
+.resume-nav ul li a{ line-height: 50px; display: block; color: #edf1eb; padding-right: 18px;}
+.resume-nav ul li a{background: none;}
+.resume-nav ul li a:hover{color:#990000; background: #edf1eb; border-top: 5px solid #990000;line-height: 45px;}
+.nav_hidden{z-index:10; position:absolute;display:inline;padding:5px 20px;background-color:#990000;top:150px;border-top: 1px dotted #edf1eb; }
+.nav_hidden span a{margin-right:5px;font-size:14px;color:#edf1eb; background: none; padding: 5px 10px;}
+.nav_hidden span a:hover{border-bottom: 5px solid #edf1eb;}
+.nav_hidden_left_1{display:none;width:80%;}
+.nav_hidden_left_2{display:none;width:80%;}
+.nav_hidden_left_3{display:none;width:80%;}
+.nav_hidden_left_4{display:none;width:80%;}
+
+/*columnLeft*/
+#education .title-h3, #researchInterests .title-h3,
+#teaching .title-h3, #selectedPublications .title-h3,#concurrentAcademicPosts .title-h3, #projects .title-h3,
+#services .title-h3{border-top: 10px #990000 solid;}
+#selectedPublications li span{
+    width:0.4em;
+    height:0.4em;
+    margin-right:0.4em;
+    margin-bottom: 0.2em;
+    background: #737373;
+    border-radius: 0.5em;
+    display: inline-block;
+}
+#selectedPublications li a{
+    background-position: 0.5em 0.5em;
+}
+
+
+/************************************修改原有页面的样式************************************/

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <script src="../../bower_components/jquery/dist/jquery.js"></script>
+    <title></title>
+    <style>
+        .demo{
+            color: red;
+        }
+    </style>
+    <style type="text/css">
+        body{
+            margin:0;
+            padding:40px;
+            background:#fff;
+            font:80% Arial, Helvetica, sans-serif;
+            color:#555;
+            line-height:180%;
+        }
+        p{
+            clear:both;
+            margin:0;
+            padding:.5em 0;
+        }
+        /* tooltip */
+        #tooltip{
+            position:absolute;
+            border:1px solid #333;
+            background:#f7f5d1;
+            padding:1px;
+            color:#333;
+            display:none;
+        }
+    </style>
+</head>
+<body>
+<p class="demo" onclick="demo()">CSS Demo</p>
+<script>
+    function demo(){
+        alert('demo')
+    }
+</script>
+多选框
+<input type="checkbox"/>test1
+<input type="checkbox" checked="checked"/>test2
+<input type="checkbox" checked="checked"/>test3
+</br>
+<script>
+    console.log($('input:checked').length)
+</script>
+
+<select name="test" multiple="multiple" style="height: 100px">
+    <option>shanghai</option>
+    <option>nanjing</option>
+    <option>beijing</option>
+    <option selected="selected">tianjin</option>
+</select>
+</br>
+</br>
+
+<select name="test2">
+    <option>heifei</option>
+    <option>zhangzhou</option>
+    <option>xiamen</option>
+</select>
+<button class="ttt">tongji</button>
+<script>
+    $(".ttt").click(function(){
+        alert($("input:checked").length)
+    })
+</script>
+
+</br>
+
+<div class="SubCategoryBox">
+    <ul>
+        <li ><a href="#">佳能</a><i>(30440) </i></li>
+        <li ><a href="#">索尼</a><i>(27220) </i></li>
+        <li ><a href="#">三星</a><i>(20808) </i></li>
+        <li ><a href="#">尼康</a><i>(17821) </i></li>
+        <li ><a href="#">松下</a><i>(12289) </i></li>
+        <li ><a href="#">卡西欧</a><i>(8242) </i></li>
+        <li ><a href="#">富士</a><i>(14894) </i></li>
+        <li ><a href="#">柯达</a><i>(9520) </i></li>
+        <li ><a href="#">宾得</a><i>(2195) </i></li>
+        <li ><a href="#">理光</a><i>(4114) </i></li>
+        <li ><a href="#">奥林巴斯</a><i>(12205) </i></li>
+        <li ><a href="#">明基</a><i>(1466) </i></li>
+        <li ><a href="#">爱国者</a><i>(3091) </i></li>
+        <li ><a href="#">其它品牌相机</a><i>(7275) </i></li>
+    </ul>
+    <div class="showmore">
+        <!--<a><span>显示全部品牌</span></a>-->
+
+        <button>显示全部品牌</button>
+    </div>
+</div>
+<script>
+    $(function(){
+        var $category = $('.SubCategoryBox ul li:gt(5):not(:last)');
+        $category.hide()
+        var $toggleButton = $('div.showmore > button');
+        $toggleButton.click(function(){
+            if($category.is(":visible")){
+                $category.hide();
+                $toggleButton.text('显示全部品牌')
+            }else{
+                $category.show()
+                $toggleButton.text('精简显示')
+            }
+        })
+
+    })
+</script>
+</br>
+
+<p><a href="#" class="tooltip" title="这是我的超链接提示1.">提示1.</a></p>
+<p><a href="#" class="tooltip" title="这是我的超链接提示2.">提示2.</a></p>
+<p><a href="#" title="这是自带提示1.">自带提示1.</a></p>
+<p><a href="#" title="这是自带提示2.">自带提示2.</a> </p>
+
+<script type="text/javascript">
+    //<![CDATA[
+    $(function(){
+        var x = 10;
+        var y = 20;
+        $("a.tooltip").mouseover(function(e){
+            this.myTitle = this.title;
+            this.title = "";
+            var tooltip = "<div id='tooltip'>"+ this.myTitle +"<\/div>"; //创建 div 元素
+            $("body").append(tooltip);	//把它追加到文档中
+            $("#tooltip")
+                    .css({
+                        "top": (e.pageY+y) + "px",
+                        "left": (e.pageX+x)  + "px"
+                    }).show("fast");	  //设置x坐标和y坐标，并且显示
+        }).mouseout(function(){
+            this.title = this.myTitle;
+            $("#tooltip").remove();   //移除
+        }).mousemove(function(e){
+            $("#tooltip")
+                    .css({
+                        "top": (e.pageY+y) + "px",
+                        "left": (e.pageX+x)  + "px"
+                    });
+        });
+    })
+    //]]>
+</script>
+
+</body>
+</html>
